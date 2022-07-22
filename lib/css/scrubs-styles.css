@@ -1,0 +1,621 @@
+/* Stylesheet: Debt Investors Custom Styles
+
+@package	Scrubs Cornwall
+@author		Digital Rockpool
+@link		https://cornwallscrubs.co.uk
+@copyright	Copyright (c) Digital Rockpool LTD 2020.
+@license	GPL-2.0+
+
+
+# Table of Contents
+
+- Typographical Elements
+	- Links
+	- Headings
+- Forms
+	- Buttons
+- Tables
+- Structure and Layout
+	- Site Containers
+	- Site Header
+	- Site Navigation
+	- Site Footer
+
+
+/* # Typographical Elements
+---------------------------------------------------------------------------------------------------- */
+body {
+	background-attachment: fixed;
+	background-color: #eff4f7;
+	background-position: left!important;
+	background-size: cover!important;
+	background-repeat: no-repeat;
+	color: #272727;
+}
+
+@media (max-width: 576px) {
+	body {
+		background-image: none!important;
+	}
+}
+
+body.page-template-template-fullscreen {
+	background-color: #272727;
+}
+
+:focus {
+	outline: none!important;
+}
+
+.background-hero-title h1 {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+a,
+a:active,
+a:hover,
+a:visted {
+	color: #2196f3;
+}
+
+a.sign-in-btn {
+	background-color: #00b964;
+	border-radius: .25rem 0 0 0.25rem;
+	color: #fff;
+	font-weight: 700;
+    letter-spacing: 1px;
+    padding: .5rem .5rem .5rem 1rem;
+    position: absolute;
+    padding: 1rem 1.5rem;
+    right: 0;
+}
+
+a.sign-in-btn:hover {
+	background-color: #178f51;
+	text-decoration: none;
+}
+
+.homepage-stats {
+	padding: 100px 0;
+}
+
+.stat-box {
+	background: #fff;
+	height: 180px;
+	padding: 1rem;
+	max-width: 480px;
+}
+
+@media (max-width: 992px) {
+	.stat-box {
+		margin: 1rem auto 0;
+	}
+}
+
+.stat-box h2,
+.stat-box h3 {
+	color: #272727;
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+
+.stat-box h2 {
+	border-bottom: #00b964 solid 0.25rem;
+	padding-bottom: .7rem;
+}
+
+.stat-box span {
+	color: #767676;
+}
+
+.stat-box a {
+	background-color: #00b964;
+	border-radius: .25rem;
+    color: #fff;
+	display: block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 1rem 1.5rem;
+	margin-top: 1rem;
+	width: fit-content;
+}
+
+.stat-box a:hover {
+	background-color: #178f51;
+	text-decoration: none;
+}
+
+#masthead {
+	background-position: center!important;
+	background-size: cover!important;
+	background-repeat: no-repeat;
+}
+
+blockquote {
+	color: #2196f3;
+	font-style: italic;
+    flex: 0 0 66%;
+    margin: 48px 60px;
+    max-width: 66%;
+}
+
+blockquote > p {
+	color: #2196f3;
+}
+
+blockquote::before {
+    font-family: 'FontAwesome';
+    content: "\f10d";
+    display: block;
+    font-size: 56px;
+    font-size: 3.5rem;
+	font-weight: 900;
+    height: 0;
+    left: -70px;
+    position: relative;
+    top: -20px;
+}
+
+figcaption {
+	font-size: 13px;
+	line-height: 1.5;
+	margin: 0 auto;
+	text-align: center;
+	width: 75%;
+}
+
+.modal-content {
+	color: #272727;
+	text-align: left;
+}
+
+.modal-content h3 {
+	font-size: 1rem;
+}
+
+/* ## Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4 {
+	line-height: 1.2;
+}
+
+h1,
+.h1-text {
+	color: #002b52;
+	font-size: 48px;
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+h2,
+.h2-text {
+	color: #002b52;
+	font-size: 36px;
+	font-size: 2.25rem;
+	font-weight: 300;
+}
+
+h3,
+.h3-text {
+	color: #002b52;
+	font-size: 28px;
+	font-size: 1.75rem;
+	font-weight: 400;
+}
+
+h4,
+.h4-text {
+	color: #002b52;
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+
+@media only screen and (max-width: 992px) {
+	
+	h1 {
+		font-size: 40px;
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 32px;
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 24px;
+		font-size: 1.5rem;
+	}
+
+	h4 {
+		font-size: 18px;
+		font-size: 1.25rem;
+	}
+	
+}
+
+@media only screen and (max-width: 576px) {
+	
+	h1 {
+		font-size: 32px;
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 26px;
+		font-size: 1.625rem;
+	}
+
+	h3 {
+		font-size: 22px;
+		font-size: 1.375rem;
+	}
+
+}
+
+
+/* # Forms
+---------------------------------------------------------------------------------------------------- */
+.gform_wrapper h2.gsection_title {
+	font-weight: 400;
+}
+
+.gform_wrapper .gfield_label,
+h4 .gfield_label {
+    color: #2196f3;
+	font-size: 12px!important;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.gform_wrapper .top_label .gfield_label {
+	margin: 0!important;
+}
+
+.gform_wrapper input[type=text],
+.gform_wrapper input[type=password],
+.gform_wrapper textarea,
+.gform_wrapper select {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #d8e0e5;
+    border-radius: .25rem;
+	color: #272727;
+    font-size: 14px!important;
+	height: 40px;
+}
+
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox] {
+	height: 40px!important;
+	margin: 0 5px 0 0!important;
+}
+
+.gform_wrapper .gform_footer input.button,
+.gform_wrapper .gform_footer input[type=submit] {
+    background-color: transparent;
+    border: 1px solid #002b52;
+	border-radius: 20px;
+    color: #002b52;
+	cursor: pointer;
+    font-size: 11px!important;
+    font-weight: 600;
+	height: 40px;
+    letter-spacing: 2px;
+	line-height: 14px;
+    margin: 0 .5rem 1rem!important;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+}
+
+body .gform_wrapper ul li.field_description_below div.ginput_container_checkbox,
+body .gform_wrapper ul li.field_description_below div.ginput_container_radio {
+	margin-top:0!important;
+}
+
+.gform_wrapper .field_description_below .gfield_description {
+	padding-top: 0!important;
+	letter-spacing: 1px!important;
+}
+
+.gf-read-only input {
+	background-color: #d8e0e5!important;
+	color: #6f6f6f!important;
+}
+
+.gform_wrapper .gfield_checkbox li label {
+	font-size: 14px!important;
+}
+
+.gform_wrapper ul.gfield_checkbox {
+	margin: 0!important;
+}
+
+.gform_wrapper li.gfield.gf_list_2col ul.gfield_checkbox li {
+	font-size: 100%!important;
+}
+
+.gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+	margin-top:0!important;
+}
+
+/* ### Multi Select Box */
+
+body .ginput_container_list table.gfield_list tbody tr td.gfield_list_icons {
+    display: inline;
+}
+
+.gform_wrapper .chosen-container-multi .chosen-choices {
+    background-color: #fcfcfc!important;
+	background-image: none!important;
+	border: 1px solid #e1e1e1!important;
+    border-radius: 0.25rem!important;
+    color: #3a3a3a!important;
+	font-size: 14px!important;
+    font-size: 0.875rem!important;
+    font-weight: 300!important;
+    height: 45px!important;
+	letter-spacing: 1px!important;
+}
+
+.gform_wrapper .chosen-container .chosen-drop {
+	border: 1px solid #e1e1e1!important;
+    border-radius: 0.25rem!important;
+    color: #3a3a3a!important;
+	font-size: 14px!important;
+    font-size: 0.875rem!important;
+    font-weight: 300!important;
+	letter-spacing: 1px!important;
+}
+
+.gform_wrapper .chosen-container .chosen-results li {
+	margin: 6px!important;
+}
+
+.gform_wrapper .chosen-container-multi .chosen-choices li.search-choice {
+    background-color: #e9ecef!important;
+	background-image: none!important;
+	border: 1px solid #e9ecef!important;
+    border-radius: 0.25rem!important;
+	box-shadow: none!important;
+    color: #3a3a3a!important;
+	font-size: 14px!important;
+    font-size: 0.875rem!important;
+	padding: 8px 20px 8px 5px!important;
+}
+
+.gform_wrapper .chosen-container-single .chosen-single {
+	background: #fff!important;
+	border: 1px solid #ced4da!important;
+	border-radius: 0.25rem!important;
+	color: #3a3a3a!important;
+	font-size: 14px!important;
+	font-size: 0.875rem;
+	font-weight: 300!important;
+	height: calc(2.25rem + 2px)!important;
+	letter-spacing: 1px!important;
+	padding: .375rem .75rem!important;
+	text-transform: none;
+}
+
+.gform_wrapper .chosen-container-active .chosen-single {
+	box-shadow: none!important;
+}
+
+/* ### Password Strenth Indicator */
+
+.gfield_password_strength {
+	background-color: #d8e0e5!important;
+	border: 1px solid #d8e0e5!important;
+	border-radius: 3px;
+	color: #272727;
+	font-size: 14px!important;
+    letter-spacing: 2px;
+	height: 40px;
+	margin-bottom: 0px!important;
+	padding: 5px!important;
+	width: 100%;
+}
+
+.gform_wrapper .gfield_password_strength.short,
+.gform_wrapper .gfield_password_strength.bad {
+	background-color: #ce211b!important; 
+	border: 1px solid #ce211b!important; 
+	color: #ffc2c0;
+	}
+
+.gform_wrapper .gfield_password_strength.good {
+	background-color: #ff9a21!important;
+	border: 1px solid #ff9a21!important;
+	color: #ffe4c4;
+}
+
+.gform_wrapper .gfield_password_strength.strong {
+	background-color: #00a74d!important;
+	border: 1px solid #00a74d!important;
+	color: #9eeac1;
+}
+
+
+/* # Delete User
+---------------------------------------------------------------------------------------------------- */
+
+.delete-user-account-container {
+	text-align: right;
+}
+
+.delete-user-account-container button {
+	background-color: #d40000!important;
+    border: 1px solid #d40000!important;
+	border-radius: 20px;
+    color: #fff;
+    font-size: 11px!important;
+    font-weight: 700;
+	height: 40px;
+    letter-spacing: 2px;
+	line-height: 14px;
+    margin: 0 .5rem 1rem;
+    padding: 0 2rem!important;
+    text-transform: uppercase;
+}
+
+.delete-user-account-container p {
+	font-size: .813em;
+    letter-spacing: .5pt;
+}
+
+.sa-confirm-button-container button.confirm {
+	background-color: #d40000!important;
+    border: 1px solid #d40000!important;
+	border-radius: 20px;
+    color: #fff;
+    font-size: 11px!important;
+    font-weight: 700;
+	height: 40px;
+    letter-spacing: 2px;
+	line-height: 14px;
+    margin: 0 .5rem 1rem;
+    padding: 0 2rem!important;
+    text-transform: uppercase;
+}
+
+.sa-button-container button.cancel {
+	background-color: #6f6f6f!important;
+    border: 1px solid #6f6f6f!important;
+	border-radius: 20px;
+    color: #fff;
+    font-size: 11px!important;
+    font-weight: 700;
+	height: 40px;
+    letter-spacing: 2px;
+	line-height: 14px;
+    margin: 0 .5rem 1rem;
+    padding: 0 2rem!important;
+    text-transform: uppercase;
+}
+
+.sweet-alert h2 {
+    color: #272727;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: none;
+    position: relative;
+    margin: 25px 0;
+    padding: 0;
+    line-height: 40px;
+    display: block;
+}
+
+/* # Tables
+---------------------------------------------------------------------------------------------------- */
+
+thead tr {
+	border-bottom: 2px solid #2196f3;
+}
+
+tr {
+	border-bottom: 2px solid #fff;
+}
+
+tr:last-child {
+	border: none;
+}
+	
+td {
+	padding: 16px 5px;
+	vertical-align: top;
+}
+
+
+/* # Site Containers
+---------------------------------------------------------------------------------------------------- */
+
+.row {
+	margin-right: 0; /* stops horizontal scrolling */
+}
+
+@media (max-width: 767px) {
+	.row {
+		margin-left: 0;
+	}
+}
+
+.page-template-template-fullscreen .row {
+	margin-left: 0;
+}
+
+/* # Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-wrapper {
+	min-height: calc(100vh - 105px);
+}
+
+.site-header {
+	background: #ffffff;
+}
+
+@media (max-width: 1199px) {
+	.site-wrapper {
+		min-height: calc(100vh - 135px);
+	}
+
+	.site-header {
+		background: none;
+	}
+}
+
+.site-description,
+.site-title {
+	display: inline-block;
+	left: -999px;
+	margin-bottom: 0;
+	position: absolute;
+}
+
+header#masthead {
+	padding-right: 0;
+}
+
+
+/* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+
+/* Main styles included in Mega Menu plugin */
+
+
+/* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+.site-footer {
+	border-top: 1px solid #ced4da;
+	color: #3a3a3a;
+	font-size: 14px;
+	padding-top: 16px;
+	width: 100%;
+}
+
+.btn-legal-link {
+	background: none;
+	border: none;
+	color: #2196f3;
+	cursor: pointer;
+}
+
+.btn-legal-link:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 575px) {
+	.legal-info,
+	.legal-links {
+		text-align: center;
+		padding: 0!important;
+	}
+}

@@ -1,0 +1,159 @@
+/* Stylesheet: Login Styles
+
+@package	Inmarsat Debt Investors
+@author		Inmarsat
+@link		https://debtinvestors.inmarsat.com
+@copyright	Copyright (c) Inmarsat Global Limited 2020.
+@license	GPL-2.0+  */
+
+/* LOGIN SCREEN */
+body {
+	background: url('https://cornwallscrubs.co.uk/wp-content/uploads/background-team.jpg');
+	background-color: #272727;
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+	body {
+		background-image: none!important;
+	}
+}
+
+
+.login form {
+	background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: none!important;
+	margin: 0;
+}
+
+:focus {
+	outline: 0;
+}
+
+.login h1 a  {
+	background-color: rgba(255, 255, 255, 0.9);
+	background-image: url(https://cornwallscrubs.co.uk/wp-content/uploads/logo.png);
+	background-repeat: no-repeat;
+    background-position: center;
+	background-size: 200px 80px;
+	height: 125px;
+    margin-bottom: 0px;
+    width: auto !important;
+}
+
+.login label {
+  	display: block;
+	color: #189cce;
+	font-size: 12px;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+}
+
+.login p.forgetmenot label {
+  	display: inline;
+	color: #002b52;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+	border: 1px solid #e1e1e1;
+	border-radius: 0.25rem;
+	background-color: #fcfcfc;
+	color: #3a3a3a;
+	font-size: 14px;
+	height: 40px;
+	padding: .375rem .75rem;
+	outline: 0;
+}
+
+.login .button-primary {
+	background-color:#002b52!important;
+	border:none!important;
+	border-radius: 0.25rem;
+	box-shadow: none;
+	color: #ffffff;
+	height: 40px!important;
+	margin-top: 10px;
+	text-shadow: none;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.forgetmenot label {
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+.login p {
+	color: #189cce;
+}
+
+.login #nav {
+	background-color: rgba(255, 255, 255, 0.9);
+	margin: 0;
+	padding-top: 15px;
+	text-align: center;
+}
+
+.login #backtoblog {
+	background-color: rgba(255, 255, 255, 0.9);
+	margin: 0;
+	padding: 15px;
+	text-align: left;
+}
+
+.login #backtoblog a {
+	display: none;
+}
+
+.login #backtoblog a,
+.login #nav a {
+	color: #189cce;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 0 8px;
+}
+
+.login #backtoblog a:hover,
+.login #nav a:hover {
+	color: #189cce;
+	text-decoration: underline;
+}
+
+.login .privacy-policy-page-link {
+	display: none;
+}
+
+.login #login_error {
+    background-color: #fbc5c5;
+	border-left: 4px solid #dc3232;
+    box-shadow: none;
+    color: #3a3a3a;
+	font-size: 14px;
+    padding: 12px;
+    margin-bottom: 0px;
+}
+
+
+ .login .message, .login .success {
+    background-color: #ffe4c4;
+	border-left: 4px solid #ff9a21;
+    box-shadow: none;
+    color: #3a3a3a;
+	font-size: 14px;
+    padding: 12px;
+    margin-bottom: 0px;
+ }
